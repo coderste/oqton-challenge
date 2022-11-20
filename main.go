@@ -91,7 +91,6 @@ func Distance(state *State, instructions string) *State {
 		steps, _ := strconv.Atoi(instruction[1:])
 
 		if turn == "R" {
-			// Turn right
 			state = state.Turn(1)
 		} else if turn == "L" {
 			state = state.Turn(-1)
